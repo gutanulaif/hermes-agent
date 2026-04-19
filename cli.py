@@ -8441,7 +8441,7 @@ class HermesCLI:
             text = buff.text
             
             # Create temporary file
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as f:
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.md', delete=False) as f:
                 f.write(text)
                 temp_file = f.name
             
